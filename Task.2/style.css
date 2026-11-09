@@ -1,0 +1,230 @@
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/* Top Section */
+.top {
+    width: 100%;
+    min-height: 480px;
+    background: linear-gradient(to bottom, #e8e8e8, white);
+}
+
+.top-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo and Text */
+.logo {
+    width: 45%;
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: cursive;
+    font-size: 65px;
+    font-style: italic;
+    color: #e34b3c;
+    margin-bottom: 15px;
+}
+
+.logo h2 {
+    font-size: 17px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.logo p {
+    color: #888;
+    font-size: 17px;
+}
+
+/* Download Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.buttons img {
+    width: 130px;
+    height: auto;
+}
+
+/* Phone Images */
+.mobile-images {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mobile-images img {
+    width: 30%;
+    max-width: 170px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Channels Section */
+.channels {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 7%;
+    background: linear-gradient(160deg, white, #f2f2f2);
+}
+
+/* Messages Section */
+.messages {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 7%;
+    background: #f8f8f8;
+}
+
+/* Future Section */
+.future {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 7%;
+    background: linear-gradient(160deg, white, #f3f3f3);
+}
+
+/* Section Headings and Paragraphs */
+.section-text {
+    width: 45%;
+    text-align: center;
+}
+
+.section-text h2 {
+    font-size: 23px;
+    letter-spacing: 5px;
+    margin-bottom: 18px;
+}
+
+.section-text p {
+    color: #888;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    min-height: 300px;
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(to bottom, #f3f3f3, white);
+}
+
+.download-text {
+    font-size: 18px;
+}
+
+footer .buttons {
+    margin-top: 18px;
+}
+
+.contact {
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+.contact a {
+    color: #65a9e8;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* Footer Logo */
+.footer-logo {
+    margin-top: 35px;
+}
+
+.footer-logo img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.footer-logo p {
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* Mobile Screen Settings */
+@media screen and (max-width: 768px) {
+
+    .top-content {
+        flex-direction: column;
+        padding: 40px 15px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo h1 {
+        font-size: 50px;
+    }
+
+    .mobile-images {
+        width: 100%;
+    }
+
+    .top .mobile-images {
+        margin-top: 35px;
+    }
+
+    .channels,
+    .messages,
+    .future {
+        flex-direction: column;
+        gap: 35px;
+        padding: 45px 15px;
+    }
+
+    .section-text {
+        width: 100%;
+    }
+
+    .mobile-images img {
+        max-width: 125px;
+    }
+
+    .section-text p {
+        font-size: 17px;
+    }
+
+    .section-text h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        padding-top: 40px;
+    }
+}
